@@ -1,5 +1,4 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pipeline_testing/Injector.dart';
 import 'package:pipeline_testing/bloc/pokemon_state.dart';
 import 'package:pipeline_testing/model/pokemon.dart';
 import 'package:pipeline_testing/use_cases/get_pokemon.dart';
