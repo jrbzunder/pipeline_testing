@@ -1,0 +1,22 @@
+name: CI
+
+on: 
+  push:
+    branches:
+    - main
+    
+jobs:
+  clean_workspace:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Flutter clean
+        run: flutter clean
+
+      - name: Flutter pub get
+        run: flutter pub get
+    
+    
