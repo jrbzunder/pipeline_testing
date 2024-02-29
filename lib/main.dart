@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pipeline_testing/Injector.dart';
+import 'package:pipeline_testing/injector.dart';
 import 'package:pipeline_testing/bloc/pokemon_cubit.dart';
 import 'package:pipeline_testing/bloc/pokemon_state.dart';
 
@@ -57,7 +57,8 @@ final TextEditingController textController = TextEditingController();
                 TextFormField(
                   controller: textController,
                 ),
-                ElevatedButton(onPressed: () => pokemonCubit.searchPokemon(textController.text), child: Text('Search')),
+                ElevatedButton(onPressed: () => pokemonCubit.searchPokemon(textController.text), 
+                child: const Text('Search'),),
               ],
             ),
           );
