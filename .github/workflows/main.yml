@@ -13,14 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Cache Flutter
-        uses: actions/cache@v2
-        with:
-          path: ~/.pub-cache
-          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-flutter-
-          
       - name: Flutter action
         # You may pin to the exact commit or the version.
         # uses: subosito/flutter-action@2783a3f08e1baf891508463f8c6653c258246225
